@@ -1,0 +1,609 @@
+/* =============================================================
+   ABIN BEV — Documentation Theme (Dark Sidebar, Brand Colors)
+   ============================================================= */
+
+:root {
+  --pf-background: #f8fafc;
+  --pf-content: #ffffff;
+  --pf-text: #1f2937;
+  --pf-primary: #988D38;
+  --pf-primary-light: #e6fffa;
+  --pf-primary-dark: #988D38;
+  --pf-secondary: #6b7280;
+  --pf-border: #e5e7eb;
+  --pf-sidebar-bg: #988D38;
+  --pf-sidebar-text: #ffffff;
+  --pf-sidebar-hover: rgba(255,255,255,0.15);
+  --pf-sidebar-active: #988D38;
+  --pf-sidebar-active-contrast: #ffffff;
+  --pf-header-bg: #988D38;
+  --pf-header-text: #ffffff;
+  --pf-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  --pf-shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+  --pf-radius: 8px;
+  --pf-transition: 0.18s ease;
+}
+
+/* =============================================================
+   GLOBAL STYLES
+   ============================================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--pf-background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--pf-text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =============================================================
+   SIDEBAR (DARK TEAL)
+   ============================================================= */
+.wy-nav-side {
+  background: var(--pf-sidebar-bg);
+  width: 300px;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+  border-right: none;
+  transition: transform 0.3s ease;
+}
+
+.wy-side-nav-search {
+  background: transparent;
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.wy-side-nav-search > a {
+  color: var(--pf-sidebar-text);
+  font-size: 1.3em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.wy-side-nav-search input[type="text"] {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--pf-radius);
+  color: var(--pf-sidebar-text);
+  padding: 10px 12px;
+  width: 100%;
+  transition: var(--pf-transition);
+}
+
+.wy-side-nav-search input[type="text"]:focus {
+  background: rgba(255,255,255,0.15);
+  border-color: var(--pf-primary);
+  box-shadow: 0 0 0 3px #988D38;
+  outline: none;
+}
+
+.wy-side-nav-search input::placeholder {
+  color: rgba(255,255,255,0.6);
+  opacity: 1;
+}
+
+/* Navigation menu */
+.wy-menu-vertical {
+  padding: 16px 0;
+  overflow: visible !important;
+}
+
+.wy-menu-vertical p.caption {
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px 16px 8px;
+  margin: 0;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.wy-menu-vertical a {
+  color: var(--pf-sidebar-text);
+  padding: 10px 16px;
+  border-radius: 0;
+  transition: var(--pf-transition);
+  position: relative;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+
+.wy-menu-vertical a:hover {
+  background: var(--pf-sidebar-hover);
+  color: white;
+  border-left-color: var(--pf-primary);
+  text-decoration: none;
+}
+
+.wy-menu-vertical li {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.wy-menu-vertical li.toctree-l1 {
+  margin-bottom: 0 !important;
+}
+
+.wy-menu-vertical li.toctree-l2 > a {
+  padding-left: 32px;
+  font-size: 13px;
+}
+
+.wy-menu-vertical li.toctree-l3 > a {
+  padding-left: 48px;
+  font-size: 13px;
+}
+
+/* =============================================================
+   EXPAND/COLLAPSE ICONS – VISIBLE ON DARK BACKGROUND
+   ============================================================= */
+button.toctree-expand,
+.wy-menu-vertical li button.toctree-expand,
+.toctree-checkbox ~ .toctree-expand,
+label.toctree-checkbox + button.toctree-expand {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #ffffff !important;      /* white on dark teal */
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-right: 6px !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 10 !important;
+    text-shadow: none !important;
+}
+
+button.toctree-expand:hover {
+    color: var(--pf-primary) !important;  /* teal accent on hover */
+}
+
+/* Ensure no theme overrides hide them */
+.toctree-checkbox:checked + button.toctree-expand,
+.toctree-checkbox:not(:checked) + button.toctree-expand {
+    display: inline-block !important;
+}
+
+/* =============================================================
+   MAIN CONTENT
+   ============================================================= */
+.wy-nav-content-wrap {
+  background: var(--pf-background);
+  margin-left: 300px;
+  transition: margin-left 0.3s ease;
+}
+
+.wy-nav-content {
+  background: var(--pf-content);
+  max-width: 900px;
+  margin: 20px auto 40px;
+  padding: 40px;
+  border-radius: var(--pf-radius);
+  box-shadow: var(--pf-shadow);
+  transition: var(--pf-transition);
+}
+
+.wy-nav-content:hover {
+  box-shadow: var(--pf-shadow-lg);
+}
+
+/* =============================================================
+   TYPOGRAPHY
+   ============================================================= */
+.rst-content h1 {
+  color: var(--pf-text);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--pf-border);
+  position: relative;
+  margin-top: 0;
+  clear: both;
+  overflow: visible;
+}
+
+.rst-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--pf-primary);
+}
+
+.rst-content h2 {
+  color: var(--pf-text);
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  position: relative;
+  clear: both;
+  margin-left: 0;
+}
+
+.rst-content h2::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--pf-primary);
+  border-radius: 2px;
+}
+
+.rst-content h3 {
+  color: var(--pf-text);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.rst-content p {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: var(--pf-text);
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.rst-content a {
+  color: var(--pf-primary-dark);
+  text-decoration: none;
+  transition: var(--pf-transition);
+}
+
+.rst-content a:hover {
+  color: var(--pf-primary);
+  text-decoration: underline;
+}
+
+/* =============================================================
+   BOTTOM NAVIGATION BUTTONS (Previous / Next)
+   Compatible Sphinx / RTD
+   ============================================================= */
+
+/* Container principal */
+.rst-footer-buttons{
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: flex-start !important; /* on gère l'espacement avec margin auto */
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--pf-border);
+  text-align: left !important; /* évite héritage centré */
+}
+
+/* Si un wrapper interne existe (RTD fréquent) */
+.rst-footer-buttons .rst-breadcrumbs-buttons{
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+/* Style des boutons */
+.rst-footer-buttons .btn-neutral{
+  background: #ffffff !important;
+  color: var(--pf-text) !important;
+  border: 1px solid var(--pf-border) !important;
+  padding: 10px 22px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+  transition: var(--pf-transition);
+}
+
+/* Hover */
+.rst-footer-buttons .btn-neutral:hover{
+  background: var(--pf-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--pf-primary) !important;
+}
+
+/* Icônes */
+.rst-footer-buttons .btn-neutral .icon{
+  color: inherit !important;
+}
+
+/* =============================================================
+   POSITIONING ROBUSTE
+   ============================================================= */
+
+/* Previous (gauche) */
+.rst-footer-buttons a[rel="prev"]{
+  margin-right: auto !important;
+}
+
+/* Next (droite) */
+.rst-footer-buttons a[rel="next"]{
+  margin-left: auto !important;
+}
+
+/* Sécurise les enfants directs */
+.rst-footer-buttons > *{
+  flex: 0 0 auto !important;
+}
+
+/* Évite tout centrage hérité du thème */
+.wy-nav-content .rst-footer-buttons,
+.wy-nav-content .rst-footer-buttons .rst-breadcrumbs-buttons{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* =============================================================
+   FOOTER
+   ============================================================= */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--pf-secondary);
+  font-size: 14px;
+  border-top: none !important;
+  margin-top: 40px;
+  background: var(--pf-content);
+  border-radius: var(--pf-radius);
+  margin: 40px 20px;
+  box-shadow: var(--pf-shadow);
+}
+
+footer hr {
+  display: none !important;
+}
+
+footer p {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--pf-secondary) !important;
+}
+
+.rst-footer-buttons {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+.rst-footer-buttons .btn-neutral {
+  background: #ffffff !important;
+  color: var(--pf-text) !important;
+  border: 1px solid var(--pf-border) !important;
+  padding: 10px 22px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+  transition: var(--pf-transition) !important;
+}
+
+.rst-footer-buttons .btn-neutral:hover {
+  background: var(--pf-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--pf-primary) !important;
+}
+
+/* =============================================================
+   RESPONSIVE
+   ============================================================= */
+@media screen and (max-width: 768px) {
+  .wy-nav-side {
+    transform: translateX(-100%);
+  }
+
+  .wy-nav-side.shift {
+    transform: translateX(0);
+  }
+
+  .wy-nav-content-wrap {
+    margin-left: 0;
+  }
+
+  .wy-nav-content {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .rst-footer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rst-footer-buttons .btn-neutral {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =============================================================
+   SCROLLBAR
+   ============================================================= */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pf-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pf-secondary);
+  border-radius: 4px;
+  transition: var(--pf-transition);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pf-primary);
+}
+
+/* =============================================================
+   PRINT
+   ============================================================= */
+@media print {
+  .wy-nav-side,
+  .rst-footer-buttons,
+  footer {
+    display: none;
+  }
+
+  .wy-nav-content-wrap {
+    margin-left: 0;
+  }
+
+  .wy-nav-content {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+/* =============================================================
+   TOP NAVIGATION BAR (STICKY)
+   ============================================================= */
+.wy-nav-top {
+  display: none !important;
+  background: #988D38 !important;
+  color: #ffffff !important;
+  padding: 0.4045em 0.809em !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  line-height: 50px !important;
+  text-align: center !important;
+  font-size: 100% !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+  margin-bottom: 20px !important;
+}
+
+.wy-nav-top i {
+  color: #ffffff !important;
+  margin-right: 10px !important;
+}
+
+.wy-nav-top a {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.wy-nav-top a:hover {
+  opacity: 0.9 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .wy-nav-top {
+    display: block !important;
+  }
+}
+
+/* =============================================================
+   MAIN CONTENT AREA
+   ============================================================= */
+.wy-nav-content {
+  padding: 40px !important;
+  margin-top: 20px !important;
+}
+
+.rst-content h1 {
+  color: var(--pf-text);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0 !important;
+  margin-bottom: 24px;
+  padding-top: 20px !important;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--pf-border);
+  position: relative;
+  clear: both;
+}
+
+.rst-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--pf-primary);
+}
+
+.rst-content h2 {
+  color: var(--pf-text);
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  position: relative;
+  clear: both;
+}
+
+.rst-content h2::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--pf-primary);
+  border-radius: 2px;
+}
+
+.rst-content h3 {
+  color: var(--pf-text);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.rst-content p {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: var(--pf-text);
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.rst-content a {
+  color: var(--pf-primary-dark);
+  text-decoration: none;
+  transition: var(--pf-transition);
+}
+
+.rst-content a:hover {
+  color: var(--pf-primary);
+  text-decoration: underline;
+}
