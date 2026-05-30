@@ -15,6 +15,7 @@ The ABInBev Platform is a digital solution designed for merchandisers to manage 
 **Key Features:**
 
 - **Merchandiser Enrollment** - Generate personalized visit links in seconds
+- **Code Access** - Conduct visits by entering the merchandiser code
 - **POC Visit Form** - Conduct structured point-of-sale visits with guided workflows
 - **Dashboard Analytics** - Track performance, sales, and key metrics in real-time
 - **Mobile-Friendly** - Fully accessible on desktop and mobile devices
@@ -25,7 +26,7 @@ Step 1: Enroll as a Merchandiser
 ================================
 
 **Location:**
-Go to ``https://abinbevform.kaeyros.org/sales-representative/form``
+Go to ``https://kaeyros4abbev-form.kaeyros.org/sales-representative/form``
 
 **What You'll Need:**
 - Your full name
@@ -40,7 +41,11 @@ Go to ``https://abinbevform.kaeyros.org/sales-representative/form``
 
 **Important:** Copy and save your personalized link. You will use this link for all your POS visits. Each link is unique to you and your country.
 
-**Example Link:** ``https://abinbevform.kaeyros.org/KA-7oZEe3/visit``
+**Example Link:** ``https://kaeyros4abbev-form.kaeyros.org/KA-7oZEe3/visit``
+
+**Alternative Access With Merchandiser Code:**
+
+Merchandisers can also conduct visits by entering their code at ``https://kaeyros4abbev-form.kaeyros.org/``. On the page, enter the **Code du commercial** and click **Send** to display the visit form.
 
 
 Step 2: Conduct POC Visits
@@ -52,7 +57,7 @@ A POC (Point of Sale) visit is a structured inspection of a retail location wher
 
 **Accessing the Visit Form:**
 
-1. Use the **personalized link** provided during enrollment
+1. Use the **personalized link** provided during enrollment, or go to ``https://kaeyros4abbev-form.kaeyros.org/`` and enter your **Code du commercial**
 2. The link opens the **POC Visit Form** directly
 3. No login or additional authentication required
 
@@ -86,41 +91,47 @@ Step 3: Track Performance on the Dashboard
 
 **Accessing the Dashboard:**
 
-Your dashboard is automatically populated once you submit visit forms. Visit the main platform URL to access your analytics.
+Your dashboard is automatically populated once visit forms are submitted. Go to ``https://kaeyros4abbev-dashboard.kaeyros.org/dashboard`` to access the analytics interface.
 
 **Dashboard Components:**
 
-**Overview Tab**
-- Summary of total visits completed
-- Recent visit submissions
-- Key performance indicators (KPIs)
-- Quick-access links to common reports
+**Dashboard**
+- Total number of POS created
+- Category breakdown of POS types
+- Number of visits per merchandiser
+- POS evolution, POS channel distribution, competitor product trends, and activity by person
 
-**Visits Tab**
-- Complete history of all conducted visits
-- Filter by date, location, or status
-- View detailed visit reports
-- Download visit data as CSV or PDF
+**POS Management**
+- Table view and map view of points of sale
+- POS owner, channel, type, location, geolocation, Heineken availability, Heineken unit price, and creation date
 
-**Analytics Tab**
-- Sales trends over time
-- Product performance metrics
-- Geographic distribution of visits
-- Inventory and stock-out analysis
-- Promotion effectiveness tracking
+**Sales**
+- Total sales and total quantities
+- Sales per product, sales per POS, sales over time, and sales per month
 
-**Reports Tab**
-- Customizable report generation
-- Pre-built report templates
-- Export options (PDF, Excel, CSV)
-- Scheduled report delivery
+**Pictures**
+- Photo cards for POS, including channel, country, initials, and POS name
+
+**Orders**
+- Number of orders, average orders per day, and total quantities ordered
+- Orders by agent, orders by SKU, daily order evolution, quantities, and rejection analysis
+
+**Stock and Pricing**
+- Availability rate, out-of-stock rate, and points of sale on alert
+- Availability by SKU, out-of-stock per POS, price evolution, and OOS vs sales correlation
+
+**Attendance Management**
+- Attendance summary and working time categories
+- Visit distribution by time slot, day, week, month, and working time report
 
 **Filters & Search:**
 
-- **Date Range** - Select custom periods or predefined ranges
-- **Location** - Filter by store, region, or country
-- **Status** - View completed, pending, or problematic visits
-- **Performance Metrics** - Compare KPIs across time periods
+- **From / To** - Select the date range
+- **Country** - Filter by market
+- **Agent** - Filter by merchandiser
+- **Point of Sale** - Filter by POS
+- **Product** - Filter by SKU/product
+- **Apply filter / Reset filter** - Refresh the dashboard or clear all selections
 
 
 Key Features & Functions
@@ -131,54 +142,54 @@ Key Features & Functions
 Monitor merchandiser activity and visit frequency. Track:
 
 - Total visits per merchandiser
-- Visit completion rate
-- Average visit duration
-- Consistency of scheduling
+- Attendance status
+- Working time categories
+- Visit distribution by time slot, day, week, and month
+- Working time report by agent
 
 **Stock Management**
 
 Keep inventory data current:
 
-- Record current stock levels
-- Identify stock-outs and shortages
-- Track product availability trends
-- Generate reorder alerts
+- Track availability rate and out-of-stock rate
+- Identify POS on alert
+- Compare availability by SKU
+- Review out-of-stock counts per POS
 
 **Sales Monitoring**
 
 Track sales performance:
 
-- Period-over-period sales comparison
-- Product-level sales data
-- Promotion impact analysis
-- Regional sales trends
+- Total sales and total quantities
+- Sales per product
+- Sales per POS
+- Sales over time and per month
 
 **POS Management**
 
 Manage point-of-sale operations:
 
-- Positioning and shelf space allocation
-- Promotional display tracking
-- Competitor product monitoring
-- Price verification and compliance
+- Search POS records in table view
+- Review POS owner, channel, type, location, and geolocation
+- Open POS coordinates in Google Maps
+- Switch between table and map views
 
 **Order Placement**
 
-Submit orders directly from visits:
+Track orders submitted during visits:
 
-- Quick order entry during visits
-- Automatic inventory adjustments
-- Order confirmation tracking
-- Historical order data
+- Number of orders and average orders per day
+- Orders by agent and SKU
+- Daily order evolution by day, week, or month
+- Quantities and rejection analysis
 
 **Photo Documentation**
 
 Capture visual evidence:
 
-- Store layout and display photos
-- Product pricing verification
-- Stock level documentation
-- Promotional material verification
+- Shop front and shelf photos
+- POS image cards in the Pictures tab
+- Channel, country, and POS identification
 
 
 Troubleshooting & Support
@@ -190,10 +201,11 @@ Troubleshooting & Support
 - Verify the full URL is correct and complete
 - Ensure you're connected to the internet
 - Clear browser cache and try again
-- Contact support with your enrollment date
+- Try the code access page at ``https://kaeyros4abbev-form.kaeyros.org/``
+- Contact support with your enrollment date if both access methods fail
 
 **"Form data didn't submit"**
-- Check that all required fields are completed (marked with *)
+- Check that all required fields are completed.
 - Ensure internet connection is stable
 - Verify file uploads are under size limits (max 10MB per image)
 - Try submitting from a different browser
@@ -212,13 +224,11 @@ Troubleshooting & Support
 
 **Need Help?**
 
-For technical support:
-- Email: ``support@abinbev-platform.com``
-- Phone: Available during business hours
+For technical support, contact the project administrator or Kaeyros support channel shared with your team.
 
 
 Best Practices & Tips
-====================
+=====================
 
 1. **Plan Your Visits** - Schedule visits in advance for consistent coverage and accurate tracking.
 
@@ -246,10 +256,10 @@ Quick Reference
 
 **Important URLs:**
 
-- **Enrollment:** ``https://abinbevform.kaeyros.org/sales-representative/form``
+- **Enrollment:** ``https://kaeyros4abbev-form.kaeyros.org/sales-representative/form``
+- **Visit with merchandiser code:** ``https://kaeyros4abbev-form.kaeyros.org/``
 - **Your Personalized Link:** (Provided at enrollment - unique to you)
-- **Dashboard:** Access via main platform website
-- **Support:** ``support@abinbev-platform.com``
+- **Dashboard:** ``https://kaeyros4abbev-dashboard.kaeyros.org/dashboard``
 
 **Key Acronyms:**
 
@@ -278,21 +288,21 @@ Success Metrics
 
 **How to Know You're Using the Platform Effectively:**
 
-✓ **Enrollment** - Successfully generated personalized link within 5 minutes
+* **Enrollment** - Successfully generated personalized link within 5 minutes
 
-✓ **Visit Submission** - Completed and submitted first visit form within 1 hour
+* **Visit Submission** - Completed and submitted first visit form within 1 hour
 
-✓ **Dashboard Access** - Viewed your first dashboard report with submitted visit data
+* **Dashboard Access** - Viewed your first dashboard report with submitted visit data
 
-✓ **Data Quality** - All form fields completed (no empty required fields)
+* **Data Quality** - All form fields completed (no empty required fields)
 
-✓ **Consistency** - Maintaining regular visit schedule (targets vary by role)
+* **Consistency** - Maintaining regular visit schedule (targets vary by role)
 
-✓ **Photo Documentation** - Including 3+ photos per visit for evidence
+* **Photo Documentation** - Including photos per visit for evidence
 
-✓ **Performance Tracking** - Reviewing dashboard monthly to identify trends
+* **Performance Tracking** - Reviewing dashboard monthly to identify trends
 
-✓ **Issue Resolution** - Following up on flagged discrepancies within 48 hours
+* **Issue Resolution** - Following up on flagged discrepancies within 48 hours
 
 
 Getting the Most from Your Data

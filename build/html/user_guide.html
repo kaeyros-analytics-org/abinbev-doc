@@ -9,9 +9,10 @@
   <title>ABInBev Platform - Quick User Guide &mdash; ABINBEV DOC 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=51fbfb23" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d3c428be" />
 
   
+    <link rel="shortcut icon" href="_static/abinbev_logo.png"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=f2a433a1"></script>
@@ -89,7 +90,6 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">ABInBev Platform - Quick User Guide</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/user_guide.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -107,6 +107,7 @@
 <p><strong>Key Features:</strong></p>
 <ul class="simple">
 <li><p><strong>Merchandiser Enrollment</strong> - Generate personalized visit links in seconds</p></li>
+<li><p><strong>Code Access</strong> - Conduct visits by entering the merchandiser code</p></li>
 <li><p><strong>POC Visit Form</strong> - Conduct structured point-of-sale visits with guided workflows</p></li>
 <li><p><strong>Dashboard Analytics</strong> - Track performance, sales, and key metrics in real-time</p></li>
 <li><p><strong>Mobile-Friendly</strong> - Fully accessible on desktop and mobile devices</p></li>
@@ -116,7 +117,7 @@
 <section id="step-1-enroll-as-a-merchandiser">
 <h2>Step 1: Enroll as a Merchandiser<a class="headerlink" href="#step-1-enroll-as-a-merchandiser" title="Link to this heading"></a></h2>
 <p><strong>Location:</strong>
-Go to <code class="docutils literal notranslate"><span class="pre">https://abinbevform.kaeyros.org/sales-representative/form</span></code></p>
+Go to <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/sales-representative/form</span></code></p>
 <p><strong>What You’ll Need:</strong>
 - Your full name
 - Your country (select from dropdown)</p>
@@ -128,7 +129,9 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <li><p>A confirmation page will display with your <strong>personalized visit link</strong></p></li>
 </ol>
 <p><strong>Important:</strong> Copy and save your personalized link. You will use this link for all your POS visits. Each link is unique to you and your country.</p>
-<p><strong>Example Link:</strong> <code class="docutils literal notranslate"><span class="pre">https://abinbevform.kaeyros.org/KA-7oZEe3/visit</span></code></p>
+<p><strong>Example Link:</strong> <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/KA-7oZEe3/visit</span></code></p>
+<p><strong>Alternative Access With Merchandiser Code:</strong></p>
+<p>Merchandisers can also conduct visits by entering their code at <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/</span></code>. On the page, enter the <strong>Code du commercial</strong> and click <strong>Send</strong> to display the visit form.</p>
 </section>
 <section id="step-2-conduct-poc-visits">
 <h2>Step 2: Conduct POC Visits<a class="headerlink" href="#step-2-conduct-poc-visits" title="Link to this heading"></a></h2>
@@ -136,7 +139,7 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <p>A POC (Point of Sale) visit is a structured inspection of a retail location where you gather information about product placement, stock levels, pricing, and promotional displays.</p>
 <p><strong>Accessing the Visit Form:</strong></p>
 <ol class="arabic simple">
-<li><p>Use the <strong>personalized link</strong> provided during enrollment</p></li>
+<li><p>Use the <strong>personalized link</strong> provided during enrollment, or go to <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/</span></code> and enter your <strong>Code du commercial</strong></p></li>
 <li><p>The link opens the <strong>POC Visit Form</strong> directly</p></li>
 <li><p>No login or additional authentication required</p></li>
 </ol>
@@ -165,35 +168,38 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <section id="step-3-track-performance-on-the-dashboard">
 <h2>Step 3: Track Performance on the Dashboard<a class="headerlink" href="#step-3-track-performance-on-the-dashboard" title="Link to this heading"></a></h2>
 <p><strong>Accessing the Dashboard:</strong></p>
-<p>Your dashboard is automatically populated once you submit visit forms. Visit the main platform URL to access your analytics.</p>
+<p>Your dashboard is automatically populated once visit forms are submitted. Go to <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-dashboard.kaeyros.org/dashboard</span></code> to access the analytics interface.</p>
 <p><strong>Dashboard Components:</strong></p>
-<p><strong>Overview Tab</strong>
-- Summary of total visits completed
-- Recent visit submissions
-- Key performance indicators (KPIs)
-- Quick-access links to common reports</p>
-<p><strong>Visits Tab</strong>
-- Complete history of all conducted visits
-- Filter by date, location, or status
-- View detailed visit reports
-- Download visit data as CSV or PDF</p>
-<p><strong>Analytics Tab</strong>
-- Sales trends over time
-- Product performance metrics
-- Geographic distribution of visits
-- Inventory and stock-out analysis
-- Promotion effectiveness tracking</p>
-<p><strong>Reports Tab</strong>
-- Customizable report generation
-- Pre-built report templates
-- Export options (PDF, Excel, CSV)
-- Scheduled report delivery</p>
+<p><strong>Dashboard</strong>
+- Total number of POS created
+- Category breakdown of POS types
+- Number of visits per merchandiser
+- POS evolution, POS channel distribution, competitor product trends, and activity by person</p>
+<p><strong>POS Management</strong>
+- Table view and map view of points of sale
+- POS owner, channel, type, location, geolocation, Heineken availability, Heineken unit price, and creation date</p>
+<p><strong>Sales</strong>
+- Total sales and total quantities
+- Sales per product, sales per POS, sales over time, and sales per month</p>
+<p><strong>Pictures</strong>
+- Photo cards for POS, including channel, country, initials, and POS name</p>
+<p><strong>Orders</strong>
+- Number of orders, average orders per day, and total quantities ordered
+- Orders by agent, orders by SKU, daily order evolution, quantities, and rejection analysis</p>
+<p><strong>Stock and Pricing</strong>
+- Availability rate, out-of-stock rate, and points of sale on alert
+- Availability by SKU, out-of-stock per POS, price evolution, and OOS vs sales correlation</p>
+<p><strong>Attendance Management</strong>
+- Attendance summary and working time categories
+- Visit distribution by time slot, day, week, month, and working time report</p>
 <p><strong>Filters &amp; Search:</strong></p>
 <ul class="simple">
-<li><p><strong>Date Range</strong> - Select custom periods or predefined ranges</p></li>
-<li><p><strong>Location</strong> - Filter by store, region, or country</p></li>
-<li><p><strong>Status</strong> - View completed, pending, or problematic visits</p></li>
-<li><p><strong>Performance Metrics</strong> - Compare KPIs across time periods</p></li>
+<li><p><strong>From / To</strong> - Select the date range</p></li>
+<li><p><strong>Country</strong> - Filter by market</p></li>
+<li><p><strong>Agent</strong> - Filter by merchandiser</p></li>
+<li><p><strong>Point of Sale</strong> - Filter by POS</p></li>
+<li><p><strong>Product</strong> - Filter by SKU/product</p></li>
+<li><p><strong>Apply filter / Reset filter</strong> - Refresh the dashboard or clear all selections</p></li>
 </ul>
 </section>
 <section id="key-features-functions">
@@ -202,49 +208,49 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <p>Monitor merchandiser activity and visit frequency. Track:</p>
 <ul class="simple">
 <li><p>Total visits per merchandiser</p></li>
-<li><p>Visit completion rate</p></li>
-<li><p>Average visit duration</p></li>
-<li><p>Consistency of scheduling</p></li>
+<li><p>Attendance status</p></li>
+<li><p>Working time categories</p></li>
+<li><p>Visit distribution by time slot, day, week, and month</p></li>
+<li><p>Working time report by agent</p></li>
 </ul>
 <p><strong>Stock Management</strong></p>
 <p>Keep inventory data current:</p>
 <ul class="simple">
-<li><p>Record current stock levels</p></li>
-<li><p>Identify stock-outs and shortages</p></li>
-<li><p>Track product availability trends</p></li>
-<li><p>Generate reorder alerts</p></li>
+<li><p>Track availability rate and out-of-stock rate</p></li>
+<li><p>Identify POS on alert</p></li>
+<li><p>Compare availability by SKU</p></li>
+<li><p>Review out-of-stock counts per POS</p></li>
 </ul>
 <p><strong>Sales Monitoring</strong></p>
 <p>Track sales performance:</p>
 <ul class="simple">
-<li><p>Period-over-period sales comparison</p></li>
-<li><p>Product-level sales data</p></li>
-<li><p>Promotion impact analysis</p></li>
-<li><p>Regional sales trends</p></li>
+<li><p>Total sales and total quantities</p></li>
+<li><p>Sales per product</p></li>
+<li><p>Sales per POS</p></li>
+<li><p>Sales over time and per month</p></li>
 </ul>
 <p><strong>POS Management</strong></p>
 <p>Manage point-of-sale operations:</p>
 <ul class="simple">
-<li><p>Positioning and shelf space allocation</p></li>
-<li><p>Promotional display tracking</p></li>
-<li><p>Competitor product monitoring</p></li>
-<li><p>Price verification and compliance</p></li>
+<li><p>Search POS records in table view</p></li>
+<li><p>Review POS owner, channel, type, location, and geolocation</p></li>
+<li><p>Open POS coordinates in Google Maps</p></li>
+<li><p>Switch between table and map views</p></li>
 </ul>
 <p><strong>Order Placement</strong></p>
-<p>Submit orders directly from visits:</p>
+<p>Track orders submitted during visits:</p>
 <ul class="simple">
-<li><p>Quick order entry during visits</p></li>
-<li><p>Automatic inventory adjustments</p></li>
-<li><p>Order confirmation tracking</p></li>
-<li><p>Historical order data</p></li>
+<li><p>Number of orders and average orders per day</p></li>
+<li><p>Orders by agent and SKU</p></li>
+<li><p>Daily order evolution by day, week, or month</p></li>
+<li><p>Quantities and rejection analysis</p></li>
 </ul>
 <p><strong>Photo Documentation</strong></p>
 <p>Capture visual evidence:</p>
 <ul class="simple">
-<li><p>Store layout and display photos</p></li>
-<li><p>Product pricing verification</p></li>
-<li><p>Stock level documentation</p></li>
-<li><p>Promotional material verification</p></li>
+<li><p>Shop front and shelf photos</p></li>
+<li><p>POS image cards in the Pictures tab</p></li>
+<li><p>Channel, country, and POS identification</p></li>
 </ul>
 </section>
 <section id="troubleshooting-support">
@@ -254,9 +260,10 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 - Verify the full URL is correct and complete
 - Ensure you’re connected to the internet
 - Clear browser cache and try again
-- Contact support with your enrollment date</p>
+- Try the code access page at <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/</span></code>
+- Contact support with your enrollment date if both access methods fail</p>
 <p><strong>“Form data didn’t submit”</strong>
-- Check that all required fields are completed (marked with <a href="#id1"><span class="problematic" id="id2">*</span></a>)
+- Check that all required fields are completed.
 - Ensure internet connection is stable
 - Verify file uploads are under size limits (max 10MB per image)
 - Try submitting from a different browser</p>
@@ -271,9 +278,7 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 - Compress images if needed before uploading
 - Try uploading from a wired internet connection</p>
 <p><strong>Need Help?</strong></p>
-<p>For technical support:
-- Email: <code class="docutils literal notranslate"><span class="pre">support&#64;abinbev-platform.com</span></code>
-- Phone: Available during business hours</p>
+<p>For technical support, contact the project administrator or Kaeyros support channel shared with your team.</p>
 </section>
 <section id="best-practices-tips">
 <h2>Best Practices &amp; Tips<a class="headerlink" href="#best-practices-tips" title="Link to this heading"></a></h2>
@@ -294,10 +299,10 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <h2>Quick Reference<a class="headerlink" href="#quick-reference" title="Link to this heading"></a></h2>
 <p><strong>Important URLs:</strong></p>
 <ul class="simple">
-<li><p><strong>Enrollment:</strong> <code class="docutils literal notranslate"><span class="pre">https://abinbevform.kaeyros.org/sales-representative/form</span></code></p></li>
+<li><p><strong>Enrollment:</strong> <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/sales-representative/form</span></code></p></li>
+<li><p><strong>Visit with merchandiser code:</strong> <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-form.kaeyros.org/</span></code></p></li>
 <li><p><strong>Your Personalized Link:</strong> (Provided at enrollment - unique to you)</p></li>
-<li><p><strong>Dashboard:</strong> Access via main platform website</p></li>
-<li><p><strong>Support:</strong> <code class="docutils literal notranslate"><span class="pre">support&#64;abinbev-platform.com</span></code></p></li>
+<li><p><strong>Dashboard:</strong> <code class="docutils literal notranslate"><span class="pre">https://kaeyros4abbev-dashboard.kaeyros.org/dashboard</span></code></p></li>
 </ul>
 <p><strong>Key Acronyms:</strong></p>
 <ul class="simple">
@@ -324,14 +329,16 @@ Go to <code class="docutils literal notranslate"><span class="pre">https://abinb
 <section id="success-metrics">
 <h2>Success Metrics<a class="headerlink" href="#success-metrics" title="Link to this heading"></a></h2>
 <p><strong>How to Know You’re Using the Platform Effectively:</strong></p>
-<p>✓ <strong>Enrollment</strong> - Successfully generated personalized link within 5 minutes</p>
-<p>✓ <strong>Visit Submission</strong> - Completed and submitted first visit form within 1 hour</p>
-<p>✓ <strong>Dashboard Access</strong> - Viewed your first dashboard report with submitted visit data</p>
-<p>✓ <strong>Data Quality</strong> - All form fields completed (no empty required fields)</p>
-<p>✓ <strong>Consistency</strong> - Maintaining regular visit schedule (targets vary by role)</p>
-<p>✓ <strong>Photo Documentation</strong> - Including 3+ photos per visit for evidence</p>
-<p>✓ <strong>Performance Tracking</strong> - Reviewing dashboard monthly to identify trends</p>
-<p>✓ <strong>Issue Resolution</strong> - Following up on flagged discrepancies within 48 hours</p>
+<ul class="simple">
+<li><p><strong>Enrollment</strong> - Successfully generated personalized link within 5 minutes</p></li>
+<li><p><strong>Visit Submission</strong> - Completed and submitted first visit form within 1 hour</p></li>
+<li><p><strong>Dashboard Access</strong> - Viewed your first dashboard report with submitted visit data</p></li>
+<li><p><strong>Data Quality</strong> - All form fields completed (no empty required fields)</p></li>
+<li><p><strong>Consistency</strong> - Maintaining regular visit schedule (targets vary by role)</p></li>
+<li><p><strong>Photo Documentation</strong> - Including photos per visit for evidence</p></li>
+<li><p><strong>Performance Tracking</strong> - Reviewing dashboard monthly to identify trends</p></li>
+<li><p><strong>Issue Resolution</strong> - Following up on flagged discrepancies within 48 hours</p></li>
+</ul>
 </section>
 <section id="getting-the-most-from-your-data">
 <h2>Getting the Most from Your Data<a class="headerlink" href="#getting-the-most-from-your-data" title="Link to this heading"></a></h2>

@@ -3,7 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
 ABInBev Dashboard and POS Visit Documentation
 ===============================================
 
@@ -40,13 +39,14 @@ ABInBev Dashboard and POS Visit Documentation
 
    Tracking/index.rst
 
----
 
 **Quick Access to the Platform**
 
-**Merchandiser enrolment form URL:** https://abinbevform.kaeyros.org/sales-representative/form
+**Merchandiser enrolment form URL:** https://kaeyros4abbev-form.kaeyros.org/sales-representative/form
 
-**Dashboard URL:** https://abinbev-dashboard.kaeyros.org/dashboard
+**Conduct a visit with merchandiser code:** https://kaeyros4abbev-form.kaeyros.org/
+
+**Dashboard URL:** https://kaeyros4abbev-dashboard.kaeyros.org/dashboard
 
 This comprehensive documentation will guide you through all the features of ABIn Bev from the merchandiser enrolment to advanced use of the platform.
 

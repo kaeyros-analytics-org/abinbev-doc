@@ -9,9 +9,10 @@
   <title>Dashboard Overview &mdash; ABINBEV DOC 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=51fbfb23" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d3c428be" />
 
   
+    <link rel="shortcut icon" href="../_static/abinbev_logo.png"/>
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../_static/documentation_options.js?v=f2a433a1"></script>
@@ -62,6 +63,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#poc-management">POC Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sales">Sales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pictures">Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#orders">Orders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stock-and-pricing">Stock and Pricing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#attendance-management">Attendance Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#export-and-capture">Export and Capture</a></li>
 </ul>
@@ -84,7 +87,6 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Dashboard Overview</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Tracking/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -94,54 +96,53 @@
              
   <section id="dashboard-overview">
 <h1>Dashboard Overview<a class="headerlink" href="#dashboard-overview" title="Link to this heading"></a></h1>
-<p>The ABInBev dashboard provides a comprehensive view of all POC visits, sales, orders, and merchandiser activity. Access it at <cite>https://abinbev-dashboard.kaeyros.org/</cite>.</p>
-<img alt="../_images/dashboard_main.png" src="../_images/dashboard_main.png" />
-<p>The dashboard is organised into several tabs: <strong>Dashboard</strong> (main overview), <strong>POS Management</strong>, <strong>Sales</strong>, <strong>Pictures</strong>, <strong>Orders</strong>, <strong>Stock and Pricing</strong>, and <strong>Attendance Management</strong>. At the top, you can apply filters to narrow down data.</p>
+<p>The ABInBev dashboard provides a comprehensive view of all POC visits, sales, orders, stock availability, pricing, and merchandiser activity. Access it at <cite>https://kaeyros4abbev-dashboard.kaeyros.org/dashboard</cite>.</p>
+<img alt="../_images/dashboard_dashboard_current.png" src="../_images/dashboard_dashboard_current.png" />
+<p>The dashboard is organised into several tabs: <strong>Dashboard</strong>, <strong>POS Management</strong>, <strong>Sales</strong>, <strong>Pictures</strong>, <strong>Orders</strong>, <strong>Stock and Pricing</strong>, and <strong>Attendance Management</strong>. A filter sidebar is available on the left side of each dashboard page.</p>
 <section id="filters">
 <h2>Filters<a class="headerlink" href="#filters" title="Link to this heading"></a></h2>
-<p>You can filter data by:</p>
+<p>The dashboard uses a filter panel on the left side of the screen. The same filter panel is available across the dashboard pages.</p>
+<p>The available filters are:</p>
 <ul class="simple">
-<li><p><strong>From / To</strong> date range</p></li>
-<li><p><strong>Country</strong></p></li>
-<li><p><strong>Merchandiser</strong></p></li>
-<li><p><strong>Point of sale</strong></p></li>
-<li><p><strong>POS channel</strong> (e.g., On Trade, Off Trade)</p></li>
-<li><p><strong>Agent</strong> : The Agent filter is only available in certain tabs, such as Sales and Attendance Management.</p></li>
+<li><p><strong>From</strong>: start date of the reporting period.</p></li>
+<li><p><strong>To</strong>: end date of the reporting period.</p></li>
+<li><p><strong>Country</strong>: filter the dashboard by market.</p></li>
+<li><p><strong>Agent</strong>: filter by merchandiser.</p></li>
+<li><p><strong>Point of Sale</strong>: filter by a specific POS.</p></li>
+<li><p><strong>Product</strong>: filter by SKU or product.</p></li>
 </ul>
-<p>Click <strong>Apply filter</strong> to update the charts and tables. <strong>Reset filter</strong> clears all selections.</p>
-<img alt="../_images/dashboard_filter.png" src="../_images/dashboard_filter.png" />
+<p>Click <strong>Apply filter</strong> to refresh the dashboard with the selected values. Click <strong>Reset filter</strong> to clear all selected filters and return to the default view.</p>
+<img alt="../_images/dashboard_filter_current.png" src="../_images/dashboard_filter_current.png" />
 </section>
 <section id="dashboard-tab">
 <h2>Dashboard Tab<a class="headerlink" href="#dashboard-tab" title="Link to this heading"></a></h2>
 <p>The main dashboard displays key metrics:</p>
 <ul class="simple">
 <li><p><strong>Total number of POS created</strong></p></li>
-<li><p><strong>Category breakdown of types of POS</strong> (pie chart: modern trade, restaurant, tavern)</p></li>
-<li><p><strong>Number of visits per merchandiser</strong> (bar chart)</p></li>
+<li><p><strong>Category breakdown of types of POS</strong> (bar, modern trade, hotel, restaurant, traditional trade, tavern, and other POS categories)</p></li>
+<li><p><strong>Number of visit per merchandiser</strong> (bar chart)</p></li>
 </ul>
-<img alt="../_images/dashboard_tab1.png" src="../_images/dashboard_tab1.png" />
+<img alt="../_images/dashboard_dashboard_current.png" src="../_images/dashboard_dashboard_current.png" />
 <ul class="simple">
 <li><p><strong>POS Evolution Chart</strong> (line chart showing POS creation over time)</p></li>
-<li><p><strong>POS Created per Merchandiser</strong> (a table listing each merchandiser and the number of POS they created)</p></li>
+<li><p><strong>POS created per Merchandiser</strong> (searchable table with Rank, Merchandiser, and Number of PDVs created)</p></li>
 </ul>
-<img alt="../_images/dashboard_tab2.png" src="../_images/dashboard_tab2.png" />
+<img alt="../_images/dashboard_deep.png" src="../_images/dashboard_deep.png" />
 <ul class="simple">
 <li><p><strong>POS Channels Distribution</strong> (pie chart: On Trade vs Off Trade)</p></li>
-<li><p><strong>List of merchandisers &amp; number of POS created</strong> (bar chart)</p></li>
-</ul>
-<img alt="../_images/dashboard_tab3.png" src="../_images/dashboard_tab3.png" />
-<ul class="simple">
+<li><p><strong>List of merchandisers &amp; number of POSs created</strong> (bar chart)</p></li>
+<li><p><strong>Average number of competitor product per week and per country</strong></p></li>
 <li><p><strong>Activity by Person</strong> (line chart showing visits over days for each merchandiser)</p></li>
 </ul>
-<img alt="../_images/dashboard_tab4.png" src="../_images/dashboard_tab4.png" />
+<img alt="../_images/dashboard_deep.png" src="../_images/dashboard_deep.png" />
 </section>
 <section id="poc-management">
 <h2>POC Management<a class="headerlink" href="#poc-management" title="Link to this heading"></a></h2>
 <p>This section allows you to manage and view all points of sale. You can switch between <strong>Table view</strong> and <strong>Map view</strong>.</p>
 <ul class="simple">
-<li><p><strong>Table view</strong>: Lists all POCs with columns: POS Name, POS Owner, POS Channel, POS Type, Location, Geolocation, Created on. You can search using the search bar.</p></li>
+<li><p><strong>Table view</strong>: Lists all POCs with columns: POS Name, POS Owner, POS Channel, POS Type, Location, Geolocation, Heineken Available, Heineken unit price, and Created on. You can search using the <strong>Rechercher</strong> search bar.</p></li>
 </ul>
-<img alt="../_images/pos_tab.png" src="../_images/pos_tab.png" />
+<img alt="../_images/dashboard_pos_current.png" src="../_images/dashboard_pos_current.png" />
 <ul class="simple">
 <li><p><strong>Map view</strong>: Displays POC locations on a map.</p></li>
 </ul>
@@ -152,63 +153,99 @@
 <p>The Sales tab shows sales performance:</p>
 <ul class="simple">
 <li><p><strong>Total sales</strong> (sales amount from all visits)</p></li>
-<li><p><strong>Number of Orders</strong> (number of orders placed during visits)</p></li>
-<li><p><strong>Average Orders per Day</strong> (average number of orders placed per day across all POCs)</p></li>
-<li><p><strong>Total Quantities</strong> (sold during visits)</p></li>
-<li><p><strong>Sales per agent</strong> (bar chart: showing total sales amount for each agent)</p></li>
-<li><p><strong>Sales per product</strong> (bar chart: showing total sales amount for each product)</p></li>
+<li><p><strong>Total Quantities</strong> (total quantity sold during visits)</p></li>
+<li><p><strong>Sales per product</strong> (bar chart showing total sales amount for each product)</p></li>
 </ul>
-<img alt="../_images/sales1.png" src="../_images/sales1.png" />
+<img alt="../_images/dashboard_sales_current.png" src="../_images/dashboard_sales_current.png" />
 <ul class="simple">
-<li><p><strong>Number of Orders per Agent</strong> and <strong>per SKU</strong></p></li>
+<li><p><strong>Sales per POS</strong> (bar chart showing total sales amount for each point of sale)</p></li>
 </ul>
-<img alt="../_images/sales2.png" src="../_images/sales2.png" />
+<img alt="../_images/sales_deep.png" src="../_images/sales_deep.png" />
 <ul class="simple">
-<li><p><strong>Prices evolution of products</strong> (line chart: showing price changes over time for different products)</p></li>
-<li><p><strong>Orders per Day</strong> (line chart showing number of orders over time)</p></li>
+<li><p><strong>Sales over time</strong> (line chart showing daily sales amount)</p></li>
+<li><p><strong>Sales per Month</strong> (monthly sales trend)</p></li>
 </ul>
-<img alt="../_images/sales3.png" src="../_images/sales3.png" />
-<ul class="simple">
-<li><p><strong>Quantities / Agent</strong> (number of units sold by each agent)</p></li>
-<li><p><strong>Quatities / SKU</strong> (number of units sold for each product)</p></li>
-<li><p><strong>Number of Rejections/Agent</strong> (number of rejections by each agent)</p></li>
-<li><p><strong>Number of Rejections / Reason</strong> (number of rejections by reason: e.g., out of stock, price too high, etc.)</p></li>
-</ul>
-<img alt="../_images/sales4.png" src="../_images/sales4.png" />
+<img alt="../_images/sales_deep.png" src="../_images/sales_deep.png" />
 </section>
 <section id="pictures">
 <h2>Pictures<a class="headerlink" href="#pictures" title="Link to this heading"></a></h2>
-<p>This section may display photos taken during POC inscription (Shop Front, Beer Shelf).
-.. image:: ../_images/pic.png</p>
+<p>This section displays photo cards for points of sale. Each card shows the POS image, channel (<strong>On Trade</strong> or <strong>Off Trade</strong>), country, initials, and POS name.</p>
+<img alt="../_images/dashboard_pictures_current.png" src="../_images/dashboard_pictures_current.png" />
+</section>
+<section id="orders">
+<h2>Orders<a class="headerlink" href="#orders" title="Link to this heading"></a></h2>
+<p>The <strong>Orders</strong> tab tracks orders and quantities submitted during visits. It is available at <cite>https://kaeyros4abbev-dashboard.kaeyros.org/dashboard/orders</cite>.</p>
+<p>The top of the tab displays:</p>
+<ul class="simple">
+<li><p><strong>Number of Orders</strong></p></li>
+<li><p><strong>Average Orders per Day</strong></p></li>
+<li><p><strong>Total Quantities Ordered</strong></p></li>
+</ul>
+<p>The tab includes the following charts:</p>
+<ul class="simple">
+<li><p><strong>Number of Orders / Agent</strong></p></li>
+<li><p><strong>Number of Orders / SKU</strong></p></li>
+<li><p><strong>Daily orders evolution</strong>, with <strong>Day</strong>, <strong>Week</strong>, and <strong>Month</strong> views</p></li>
+<li><p><strong>Quantities / Agent</strong></p></li>
+<li><p><strong>Quantities / SKU</strong></p></li>
+<li><p><strong>Number of Rejections / Agent</strong></p></li>
+<li><p><strong>Number of Rejections / Reason</strong></p></li>
+</ul>
+<p>The bottom table includes a <strong>Search …</strong> field, <strong>CSV</strong> export, <strong>XLSX</strong> export, and <strong>Columns</strong> selector. If no rows match the current filters, the dashboard displays <strong>No data available</strong> and suggests checking back later or resetting filters.</p>
+<img alt="../_images/dashboard_orders_current.png" src="../_images/dashboard_orders_current.png" />
+</section>
+<section id="stock-and-pricing">
+<h2>Stock and Pricing<a class="headerlink" href="#stock-and-pricing" title="Link to this heading"></a></h2>
+<p>The <strong>Stock and Pricing</strong> tab tracks product availability, out-of-stock situations, POS alerts, and product price evolution. It is available at <cite>https://kaeyros4abbev-dashboard.kaeyros.org/dashboard/stocks-pricing</cite>.</p>
+<p>Use the filters on the left side of the dashboard to refine the analysis by:</p>
+<ul class="simple">
+<li><p><strong>From / To</strong> date range</p></li>
+<li><p><strong>Country</strong></p></li>
+<li><p><strong>Agent</strong></p></li>
+<li><p><strong>Point of Sale</strong></p></li>
+<li><p><strong>Product</strong></p></li>
+</ul>
+<p>Click <strong>Apply filter</strong> to update the charts. Click <strong>Reset filter</strong> to clear the selected filters.</p>
+<p>The top of the tab displays three key indicators:</p>
+<ul class="simple">
+<li><p><strong>Availability Rate (Numeric Distribution)</strong>: percentage of product observations marked as available.</p></li>
+<li><p><strong>Out-of-Stock Rate (OOS Rate)</strong>: percentage of product observations marked as out of stock.</p></li>
+<li><p><strong>Points of Sale on Alert</strong>: number of POS with stock availability issues.</p></li>
+</ul>
+<img alt="../_images/stock_pricing_top.png" src="../_images/stock_pricing_top.png" />
+<p>The <strong>Availability by SKU</strong> chart compares available quantity and out-of-stock quantity for each product. It helps identify which SKUs are most frequently unavailable.</p>
+<p>The <strong>Out of Stock per POS</strong> chart ranks points of sale by the number of out-of-stock products. Use it to quickly identify POS that need follow-up.</p>
+<img alt="../_images/stock_pricing_middle.png" src="../_images/stock_pricing_middle.png" />
+<p>The <strong>Average Prices Evolution</strong> chart shows how average product prices evolve over time. The view can be switched between <strong>Day</strong>, <strong>Week</strong>, and <strong>Month</strong>.</p>
+<img alt="../_images/stock_pricing_bottom.png" src="../_images/stock_pricing_bottom.png" />
+<p>The <strong>Prices evolution of products</strong> chart compares price changes across selected products. The chart can display multiple products at the same time, making it easier to spot product-level price differences.</p>
+<p>The <strong>Out of Stock vs Sales Correlation</strong> chart compares OOS count and sales volume over time. Use it to understand whether stock issues are affecting sales activity.</p>
+<img alt="../_images/stock_pricing_correlation.png" src="../_images/stock_pricing_correlation.png" />
 </section>
 <section id="attendance-management">
 <h2>Attendance Management<a class="headerlink" href="#attendance-management" title="Link to this heading"></a></h2>
 <p>Monitor merchandiser attendance and work time:</p>
 <ul class="simple">
 <li><p><strong>Attendance summary</strong>: number of present/absent merchandisers.</p></li>
-<li><p><strong>Worktime category</strong> distribution (&lt;1 hour, 1‑2 hours, etc.) and the number of occurrences of each category.</p></li>
-<li><p><strong>Daily attendance summary</strong>: chart showing attendance status of each merchandiser for each day.</p></li>
+<li><p><strong>Summary of working time per user</strong>: table with worktime categories such as <strong>&lt; 1 hour</strong>, <strong>1 to 2 hours</strong>, <strong>2 to 3 hours</strong>, <strong>3 to 4 hours</strong>, <strong>4 to 5 hours</strong>, and <strong>&gt; 5 hours</strong>.</p></li>
+<li><p><strong>Daily attendance summary</strong>: chart showing attendance status for each day.</p></li>
 </ul>
-<img alt="../_images/attendance1.png" src="../_images/attendance1.png" />
+<img alt="../_images/dashboard_attendance_current.png" src="../_images/dashboard_attendance_current.png" />
 <ul class="simple">
-<li><p><strong>Attendance tracking per merchandisers</strong> : chart showing attendance status of each merchandiser over time category (early morning, late morning, afternoon).</p></li>
-<li><p><strong>Distribution of visits by time slots</strong> Chart showing distribution of visits by time slots (early morning, late morning, afternoon).</p></li>
+<li><p><strong>Attendance Tracking per Merchandisers</strong>: chart grouped by time category.</p></li>
+<li><p><strong>Distribution of visits by time slots</strong>: chart using <strong>Early morning: 06:00 to 10:00</strong>, <strong>Late morning: 10:00 to 14:00</strong>, and <strong>Afternoon: 14:00 to 18:00</strong>.</p></li>
 </ul>
 <img alt="../_images/attendance2.png" src="../_images/attendance2.png" />
 <ul class="simple">
-<li><p><strong>Distribution of visits per Day</strong> bar chart showing distribution of visits per day.</p></li>
-<li><p><strong>Average number of visits per week per agent</strong> : line chart showing average number of visits per week for each agent.</p></li>
+<li><p><strong>Distribution of visits per day</strong></p></li>
+<li><p><strong>Average number of visits per week and per agent</strong></p></li>
 </ul>
 <img alt="../_images/attendance3.png" src="../_images/attendance3.png" />
 <ul class="simple">
-<li><p><strong>Distribution of visits per Month</strong> bar chart showing distribution of visits per month.</p></li>
-<li><p><strong>Table with a record of all visits</strong> with columns: Merchandiser, Country, Number of POS visited…</p></li>
+<li><p><strong>Distribution of visits per month</strong></p></li>
+<li><p><strong>Working time Report</strong>: searchable table with Agent, Date, Country, Start Time, End Time, Total Work Time, and Work Time Rate. The table supports <strong>CSV</strong>, <strong>XLSX</strong>, and <strong>Columns</strong> controls.</p></li>
 </ul>
-<img alt="../_images/attendance4.png" src="../_images/attendance4.png" />
-<ul class="simple">
-<li><p><strong>Working time report</strong> table with start/end times and total work time.</p></li>
-</ul>
-<img alt="../_images/attendance5.png" src="../_images/attendance5.png" />
+<img alt="../_images/attendance_deep.png" src="../_images/attendance_deep.png" />
 </section>
 <section id="export-and-capture">
 <h2>Export and Capture<a class="headerlink" href="#export-and-capture" title="Link to this heading"></a></h2>

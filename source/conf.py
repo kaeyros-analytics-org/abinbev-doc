@@ -28,12 +28,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_favicon = '_images/abinbev_logo.png'
+html_show_sourcelink = False
 html_show_copyright = True
 html_show_sphinx = False
-
-html_theme_options = {
-    'footer_links': [],
-}
 
 def setup(app):
     app.add_css_file('custom.css')

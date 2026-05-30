@@ -1,12 +1,19 @@
 Conducting a POC Visit
 =======================
 
-Once you have your personalized link, you can start conducting Point of Sale (POC) visits. The visit form adapts based on whether the POC is already registered and the country you are in.
+Once you have your personalized link or merchandiser code, you can start conducting Point of Sale (POC) visits. The visit form adapts based on whether the POC is already registered and the country you are in.
 
 Accessing the Visit Form
 ------------------------
 
-Open the link you received during enrollment. You will see the **AbInBev POC Visit** form with your name and country pre-filled.
+You can access the visit form in two ways:
+
+- Open the personalized link you received during enrollment.
+- Go to `https://kaeyros4abbev-form.kaeyros.org/`, enter your **Code du commercial**, then click **Send**.
+
+After access, you will see the **AbInBev POC Visit** form with your name and country pre-filled.
+
+.. image:: ../_images/merchandiser_code_form.png
 
 .. image:: ../_images/visit_form_top.png
 
@@ -19,11 +26,13 @@ The form includes:
 
 Two Scenarios
 -------------
+
 .. image:: ../_images/visit_form_question.png
 
 Depending on your answer to the registration question, the form will display different fields.
 
-### If the POC is already registered
+If the POC is already registered
+--------------------------------
 
 Select **Yes**. You will be redirected to a form, where you can select the existing POC from a dropdown. After selecting, you proceed to the visit details. 
 
@@ -54,12 +63,12 @@ You may also say if a competitor product is available. For example:
 
 .. image:: ../_images/visit_comp.png
 
-- Heineken Sold In Pc
+- Heineken Sold In Poc
 
 Additionally, you may be required to take pictures of:
 
 - **Fridge**
-- **Gongola** (promotional material)
+- **Gondola** (promotional material)
 - **Banner**
 
 .. image:: ../_images/visit_pictures.png
@@ -70,7 +79,8 @@ Finally, you can add **Notes** and then click **Send** to submit the visit.
 
 After submission, the visit data is recorded and can be viewed in the dashboard.
 
-### If the POC is not registered
+If the POC is not registered
+----------------------------
 
 Select **No**. You will be prompted to create a new POC by filling the following fields:
 

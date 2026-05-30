@@ -6,17 +6,17 @@
   --pf-background: #f8fafc;
   --pf-content: #ffffff;
   --pf-text: #1f2937;
-  --pf-primary: #988D38;
-  --pf-primary-light: #e6fffa;
-  --pf-primary-dark: #988D38;
+  --pf-primary: #ffe300;
+  --pf-primary-light: #fff7b3;
+  --pf-primary-dark: #8a7f1f;
   --pf-secondary: #6b7280;
   --pf-border: #e5e7eb;
-  --pf-sidebar-bg: #988D38;
+  --pf-sidebar-bg: #050505;
   --pf-sidebar-text: #ffffff;
-  --pf-sidebar-hover: rgba(255,255,255,0.15);
-  --pf-sidebar-active: #988D38;
-  --pf-sidebar-active-contrast: #ffffff;
-  --pf-header-bg: #988D38;
+  --pf-sidebar-hover: rgba(255, 227, 0, 0.12);
+  --pf-sidebar-active: #ffe300;
+  --pf-sidebar-active-contrast: #111111;
+  --pf-header-bg: #050505;
   --pf-header-text: #ffffff;
   --pf-shadow: 0 1px 3px rgba(0,0,0,0.05);
   --pf-shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
@@ -42,7 +42,7 @@ html, body {
 }
 
 /* =============================================================
-   SIDEBAR (DARK TEAL)
+   SIDEBAR
    ============================================================= */
 .wy-nav-side {
   background: var(--pf-sidebar-bg);
@@ -81,7 +81,7 @@ html, body {
 .wy-side-nav-search input[type="text"]:focus {
   background: rgba(255,255,255,0.15);
   border-color: var(--pf-primary);
-  box-shadow: 0 0 0 3px #988D38;
+  box-shadow: 0 0 0 3px rgba(255, 227, 0, 0.35);
   outline: none;
 }
 
@@ -102,10 +102,18 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 16px 16px 8px;
-  margin: 0;
+  line-height: 1.25;
+  padding: 18px 16px 10px;
+  margin: 0 0 6px;
   display: block !important;
   visibility: visible !important;
+  position: relative;
+  z-index: 2;
+}
+
+.wy-menu-vertical p.caption + ul {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .wy-menu-vertical a {
@@ -120,9 +128,42 @@ html, body {
 
 .wy-menu-vertical a:hover {
   background: var(--pf-sidebar-hover);
-  color: white;
+  color: var(--pf-primary);
   border-left-color: var(--pf-primary);
   text-decoration: none;
+}
+
+.wy-menu-vertical li.current,
+.wy-menu-vertical li.on,
+.wy-menu-vertical li.current > ul {
+  background: #101010 !important;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.toctree-l1.current > a {
+  background: #151515 !important;
+  color: #ffffff !important;
+  border-left-color: var(--pf-primary) !important;
+  font-weight: 700 !important;
+}
+
+.wy-menu-vertical li.current a {
+  color: #f3f4f6 !important;
+}
+
+.wy-menu-vertical li.current a:hover {
+  background: rgba(255, 227, 0, 0.12) !important;
+  color: var(--pf-primary) !important;
+}
+
+.wy-menu-vertical li.current a.current,
+.wy-menu-vertical li.current > a.current,
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a {
+  background: var(--pf-sidebar-active) !important;
+  color: var(--pf-sidebar-active-contrast) !important;
+  border-left-color: #ffffff !important;
 }
 
 .wy-menu-vertical li {
@@ -132,6 +173,10 @@ html, body {
 
 .wy-menu-vertical li.toctree-l1 {
   margin-bottom: 0 !important;
+}
+
+.wy-menu-vertical p.caption + ul > li.toctree-l1:first-child > a {
+  margin-top: 0 !important;
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
@@ -154,7 +199,7 @@ label.toctree-checkbox + button.toctree-expand {
     display: inline-block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    color: #ffffff !important;      /* white on dark teal */
+    color: #ffffff !important;
     font-size: 14px !important;
     font-weight: bold !important;
     margin-right: 6px !important;
@@ -168,7 +213,7 @@ label.toctree-checkbox + button.toctree-expand {
 }
 
 button.toctree-expand:hover {
-    color: var(--pf-primary) !important;  /* teal accent on hover */
+    color: var(--pf-primary) !important;
 }
 
 /* Ensure no theme overrides hide them */
@@ -491,7 +536,7 @@ footer p {
    ============================================================= */
 .wy-nav-top {
   display: none !important;
-  background: #988D38 !important;
+  background: #050505 !important;
   color: #ffffff !important;
   padding: 0.4045em 0.809em !important;
   position: sticky !important;
