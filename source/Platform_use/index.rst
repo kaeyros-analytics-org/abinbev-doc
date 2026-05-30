@@ -9,7 +9,7 @@ Accessing the Visit Form
 You can access the visit form in two ways:
 
 - Open the personalized link you received during enrollment.
-- Go to `https://kaeyros4abbev-form.kaeyros.org/`, enter your **Code du commercial**, then click **Send**.
+- Go to ``https://kaeyros4abbev-form.kaeyros.org/``, enter your **Merchandiser Code**, then click **Send**.
 
 After access, you will see the **AbInBev POC Visit** form with your name and country pre-filled.
 
